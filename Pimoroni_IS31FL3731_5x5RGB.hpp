@@ -30,10 +30,10 @@ class Pimoroni_IS31FL3731_5x5RGB : public Adafruit_IS31FL3731
       if (x >= 15 || y >= 5 || x < 0 || y < 0) {
         return;
       }
-      int16_t corrected_x = map_to_standard_layout[y + x*5][1];
-      int16_t corrected_y = map_to_standard_layout[y + x*5][0];
+      int16_t corrected_x = map_to_standard_layout[y + x*5][0];
+      int16_t corrected_y = map_to_standard_layout[y + x*5][1];
 
-      setLEDPWM(corrected_y + corrected_x * 16, color, _frame);
+      setLEDPWM(corrected_x + corrected_y * 16, color, _frame);
       return;
     }
 };
