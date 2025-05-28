@@ -2,4 +2,4 @@
 
 Augmented to support the [Pimoroni 5x5 RGB LED matrix](https://shop.pimoroni.com/products/5x5-rgb-matrix-breakout?variant=21375941279827) with the help of this [comment](https://forum.arduino.cc/t/pimoroni-5x5-rgb-matrix/895888/9).
 Uses the [schematic](https://cdn.shopify.com/s/files/1/0174/1800/files/5x5-rgb-matrix-breakout-schematic.png?v=1742219027) from the description and the [datasheet](https://www.lumissil.com/assets/pdf/core/IS31FL3731_DS.pdf) for the IS31FL3731_DS to find a mapping between the pins used on the 5x5 LED matrix and the example 16x9 matrix.
-Layout is addressed as 15x5, with the x axis addressing red as 0-5, green as 5-10 and blue as 10-15.
+Layout is addressed as 15x5, with the x axis addressing red as 0-4, green as 5-9 and blue as 10-14.
